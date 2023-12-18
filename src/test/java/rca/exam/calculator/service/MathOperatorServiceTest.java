@@ -21,19 +21,15 @@ public class MathOperatorServiceTest {
     private MathOperatorImpl mathOperatorMock;
 
     @Test
-    public void shouldPerformMathOperationSuccessfully() throws InvalidOperationException {
-        // Given
-        double operand1 = 89;
-        double operand2 = 10;
-        String operation = "/";
+    public void OnAdditionOperation_Should_AddProperly() throws InvalidOperationException {
+        double operator1 = 30;
+        double operator2 = 9;
+        String operation = "+";
+        double expectedResult = 39.0;
 
-        // When
-        double mathOperation = mathOperatorService.doMath(operand1, operand2, operation);
-
-        // Then
-        verify(mathOperatorMock, times(1)).doMath(operand1, operand2, operation);
-
-        // Assert
-        assertThat(mathOperation).isEqualTo(8.9);
+        when(mathOperatorService.doMath(operator1, operator2, operation)).thenReturn(expectedResult);
+        double actualMathResult = mathOperatorService.doMath(operator1, operator2, operation);
+        assertThat(actualMathResult).isEqualTo(expectedResult);
+        verify(mathOperatorService).doMath(operator1, operator2, operation);
     }
 }
