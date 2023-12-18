@@ -33,6 +33,4 @@ build/
 .vscode/
 
 /src/main/java/rca/exam/v1/controllers
-/src/main/java/rca/exam/v1/services
-/src/main/java/rca/exam/v1/serviceImpls
-/src/test/java/rca/exam/calculator
+/src/test/java/rca/exam/calculator/
