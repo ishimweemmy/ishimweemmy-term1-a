@@ -34,6 +34,6 @@ public class MathOperatorServiceTest {
         verify(mathOperatorMock, times(1)).doMath(operand1, operand2, operation);
 
         // Assert
-        assertThat(mathOperation).isEqualTo(0.0); // Adjust this based on the actual behavior of your method
+        assertThat(mathOperation).isEqualTo(8.9);
     }
 }

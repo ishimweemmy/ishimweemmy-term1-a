@@ -26,6 +26,6 @@ public class MathControllerTest {
         ResponseEntity<ApiResponse> response = this.restTemplate.postForEntity("/api/v1/do_math", dto,
                 ApiResponse.class);
 
-        assertEquals(200, response.getStatusCode().value());    
+        assertEquals(7, response.getStatusCode().value());    
     }
 }
