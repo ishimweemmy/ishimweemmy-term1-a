@@ -32,5 +32,4 @@ build/
 ### VS Code ###
 .vscode/
 
-/src/main/java/rca/exam/v1/controllers
-/src/test/java/rca/exam/calculator/
+
